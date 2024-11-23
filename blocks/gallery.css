@@ -19,7 +19,7 @@
         grid-template-columns: 90vw;
         grid-template-rows: repeat(8, 1fr);
         grid-gap: 12px;
-        margin: 38px 1rem 0;
+        margin: 38px 5vw 0;
     }
 }
 
