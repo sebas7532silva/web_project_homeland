@@ -1,0 +1,202 @@
+.places {
+    max-width: 987px;
+    margin: 92px 148px 0;
+    justify-self: center;
+}
+
+.places__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 152px 460px;
+    column-gap: 40px;
+    row-gap: 3rem;
+    grid-template-areas: 
+        "title artists"
+        "image paragraph"
+        "button paragraph";
+    margin-bottom: 5rem;
+}
+
+.places__title {
+    font-family: "My Inter Black";
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 76px;
+    text-align: left;
+    grid-area: title;
+    margin: 0;
+    max-width: 460px;
+    max-height: 152px;
+}
+
+.places__artists-item {
+    align-self: self-end;
+    grid-area: artists;
+}
+
+.places__artists-heading {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    margin: 0 0 0.5rem;
+}
+
+.places__artists {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+}
+
+.places__image-item {
+    max-width: 460px;
+    max-height: 460px;
+    grid-area: image;
+    box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+.places__image {
+    width: 100%;
+    height: 100%;
+}
+
+.places__paragraph-item {
+    grid-area: paragraph;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    max-width: 484px;
+}
+
+.places__paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.34px;
+    text-align: left;
+    margin: 0;
+}
+
+.places__button {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: center;
+    text-decoration: none;
+    max-width: 249px;
+    max-height: 3rem;
+    padding: 13px 20px 13px 20px;
+    gap: 10px;
+    border-radius: 4px 0px 0px 0px;
+    background: linear-gradient(90deg, #0278FE 0%, #003A7B 99.98%);
+    box-shadow: 5px 5px 10px 0px #00000040;
+    align-self: self-start;
+    grid-area: button;
+}
+
+.places__image-item:hover {
+    filter: brightness(50%); 
+}
+
+.places__button:hover {
+    background: linear-gradient(90deg, rgba(2, 120, 254, 0.25) 0%, rgba(0, 58, 123, 0.25) 99.98%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+    .places {
+        margin: 62px 0 0;
+    }
+    .places__item {
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        row-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title"
+            "artists"
+            "image"
+            "paragraph"
+            "button";
+        margin-bottom: 50px;
+    }
+    .places__title {
+        font-size: 32px;
+        line-height: 35px;      
+        margin: 0 1rem;
+        width: 288px;       
+    }
+    .places__artists-heading {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.52px;
+        letter-spacing: 0.12em; 
+        margin: 0 1rem 0.5rem;
+    }
+    
+    .places__artists {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        margin: 0 1rem 0;
+    }
+
+    .places__image-item {
+        width: 100vw;
+        height: calc(100vw);
+        box-shadow: none;
+    }
+    .places__paragraph-item {
+        row-gap: 25px;
+        width: 90vw;
+        margin: 0;
+        justify-self: center;
+    }
+    .places__button {
+        width: 90vw;
+        height: 48px;
+        gap: 10px;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 3rem;
+        justify-self: center;
+        align-self: center;  
+    }
+  }
+  
+  @media screen and (min-width: 545px) and (max-width: 1024px) {
+    .places {
+        margin: 62px 24px 0;
+    }
+    .places__item {
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto 340px auto;
+        column-gap: 28px;
+
+    }
+    .places__title {
+        font-size: 42px;
+        font-weight: 900;
+        line-height: 46px;
+        max-width: 340px;
+      
+    }
+
+    .places__image-item {
+        max-width: 340px;
+
+    }
+    .places__paragraph-item {
+        max-width: 352px;
+    }
+
+    .places__paragraph {
+        font-size: 16px;
+        line-height: 26.08px;
+    }
+
+  }

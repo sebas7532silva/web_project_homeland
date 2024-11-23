@@ -41,6 +41,7 @@
     line-height: 26.08px;
     text-align: left;
     max-width: 722px;
+    margin: 0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 544px) {
