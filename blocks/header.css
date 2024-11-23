@@ -69,4 +69,7 @@
       font-size: 75px;
       line-height: 1;
     }
+    .header__image-container {
+      width: 100vw;
+    }
   }
