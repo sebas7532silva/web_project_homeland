@@ -4,7 +4,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 2fr);
     grid-gap: 1rem;
-    margin: 118px 43px 0;
+    margin: 118px 0 0;
+    justify-self: center;
 }
 
 .gallery__image {
@@ -25,7 +26,6 @@
     .gallery {
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-gap: 12px;
         margin: 4rem 1.5rem 0;
         justify-content: center;
         align-items: center;
